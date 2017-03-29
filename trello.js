@@ -7,6 +7,7 @@ var textoLista = document.createTextNode(elementosListaCrearPendientesSemana);
 lista.appendChild(textoLista);
 document.getElementById("pendientesSemana").appendChild(lista);
 
+var botonBorrar = document.createElement("button");
 }
 
 function crearPendientesOtraSemana () {
@@ -18,10 +19,17 @@ lista.appendChild(textoLista);
 document.getElementById("pendientesOtraSemana").appendChild(lista);
 }
 
-/* function crearLista () {
+function borrarPendiente() {
+  var borrar = document.getElementById("pendientesSemana");
+  borrar.removeChild(borrar.childNodes[0]);
+}
+
+
+function crearLista () {
+var crearLista = document.getElementById("crearNuevaLista").value;
 
   var lista = document.createElement("li");
-  var textoLista = document.createTextNode(elementos.value);
+  var textoLista = document.createTextNode(crearLista);
   lista.appendChild(textoLista);
-  document.getElementById("pendientesSemana").appendChild(lista);
-} */
+  document.getElementById("contenedor").appendChild(lista);
+}
