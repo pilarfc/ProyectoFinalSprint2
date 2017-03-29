@@ -19,7 +19,7 @@
   <body>
    <h1 align = "center"> Trello </h1>
 
-<div id = "contenedor">
+<section id = "contenedor">
   <p> Pendientes Semana </p>
     <ol id = "pendientesSemana">
       <li> Pasar exámen segundo sprint </li>
@@ -28,31 +28,30 @@
 
     <input type = "text" id = "usuarioCrearPendientesSemana">
     <button  onclick="crearPendiente()"> Crear Pendiente </button>
-    <button  onclick="borrarPendiente()"> Borrar Pendiente</button>
+    <button  onclick="borrarPendienteUno()"> Borrar Pendiente</button>
 
     <hr>
 
+     <p> Pendientes Otra Semana</p>
     <ol id = "pendientesOtraSemana">
-      <p> Pendientes Otra Semana</p>
       <li> Ponerme a estudiar más </li>
       <li> Ir a correr </li>
     </ol>
 
     <input type = "text" id = "infoPendientesOtraSemana">
     <button onclick="crearPendientesOtraSemana()"> Crear Pendiente </button>
+    <button  onclick="borrarPendienteDos()"> Borrar Pendiente</button>
 
     <hr>
+  </section>
 
- <div>
+ <section id = "agregarLista">
    <h2> Agregar Lista </h2>
-    <ol>
-    </ol>
+   
    <input type = "text" placeholder="Nombre de la lista" id = "crearNuevaLista">
    <button onclick = "crearLista()"> Crear Lista </button>
- </div>
+  </section>
 
-</div>
    <script src = "trello.js"> </script>
-
   </body>
 </html>
