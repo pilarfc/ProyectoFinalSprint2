@@ -9,40 +9,45 @@
      font-size: 200%;
     }
     h1 {
+     font-size: 250%;
+    }
+    h2 {
      font-size: 150%;
     }
    </style>
+
   <body>
    <h1 align = "center"> Trello </h1>
 
-<ul>
-    <ol>
-      <p> Pendientes Semana</p>
+<div>
+    <ol id = "pendientesSemana">
+      <p> Pendientes Semana </p>
       <li> Pasar exámen segundo sprint </li>
       <li> Ir al concierto de Morrissey </li>
     </ol>
 
-    <input type = "text" name = "infoUsuario">
-    <button type = "submit" value = "Submit"> Crear Pendiente </button>
+    <input type = "text" id = "usuarioCrearPendientesSemana">
+    <button  onclick="crearPendiente()"> Crear Pendiente </button>
 
     <hr>
 
-    <ol>
+    <ol id = "pendientesOtraSemana">
       <p> Pendientes Otra Semana</p>
       <li> Ponerme a estudiar más </li>
       <li> Ir a correr </li>
     </ol>
 
-    <input type = "text" name = "infoUsuario2">
-    <button type = "submit" value = "Submit"> Crear Pendiente </button>
+    <input type = "text" id = "infoPendientesOtraSemana">
+    <button onclick="crearPendientesOtraSemana()"> Crear Pendiente </button>
 
     <hr>
 
-  </ul>
-
-   <h1 > Agregar Lista </h1>
+   <h2> Agregar Lista </h2>
    <input type = "text" name = "agregarLista">
-   <button type = "submit" value = "Submit"> Crear Lista </button>
+   <button> Crear Lista </button>
+
+</div>
+   <script src = "trello.js"> </script>
 
   </body>
 </html>
